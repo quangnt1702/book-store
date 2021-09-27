@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link href="css/login.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Login</h1>
+            <form action="MainController" method="POST">
+                <input type="text" size="30" name="userID" placeholder="User ID" required=""/><br/>
+                <input type="password" size="30" name="password" placeholder="Password" required=""/><br/>
+                <input id="login" type="submit" name="action" value="Login"/>
+            </form>
+            <a href="https://accounts.google.com/o/oauth2/auth?scope=email&redirect_uri=http://localhost:8080/SellBookManagement/login-google&response_type=code
+               &client_id=8813205856-ep18h2nlunpcbj5o8dkvk6gkfeu80qmr.apps.googleusercontent.com&approval_prompt=force" class="google btn"><i class="fa fa-google fa-fw">
+                </i> Login with Google+
+            </a>
+            <!--            <div id="create"><a href="createUser.jsp">Create new Account</a></div>-->
+
+        </div>
+    </body>
+</html>
